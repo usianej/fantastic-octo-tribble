@@ -32,6 +32,13 @@
             "metadata": {
                 "description": "Name of Second Subnet"
             }
+        },
+        "subNetName4": {
+            "type": "string",
+            "defaultValue": "subnet4",
+            "metadata": {
+                "description": "Name of Second Subnet"
+            }
         }
     },
     "functions": [],
@@ -64,6 +71,12 @@
                     }
                 },
                  {
+                    "name": "[parameters('subNetName3')]",
+                    "properties": {
+                        "addressPrefix": "10.0.2.0/24"
+                    }
+                },
+                {
                     "name": "[parameters('subNetName3')]",
                     "properties": {
                         "addressPrefix": "10.0.2.0/24"
